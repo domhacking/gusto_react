@@ -1,0 +1,13 @@
+{
+  "name": "Gusto",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Hacking",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "react": "^0.14.8",
+    "react-dom": "^0.14.8",
+    "reactify": "^1.1.1"
+  }
+}

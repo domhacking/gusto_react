@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<link href="custom.css" rel="stylesheet" type="text/css"/>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Gusto</title>
+		<link href="http://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div id="app">
+
+			<div class="catergories--container">
+				<h2 class="catergories--header">Store Cuboard</h2>
+				<li class="catergories--item">Wine</li>
+				<li class="catergories--item">Gin</li>
+				<li class="catergories--item">Desserts</li>
+				<li class="catergories--item">Homeware</li>
+			</div>
+			<input type="text">
+			<div class="products--container">
+				<li class="products--items">Cabernet</li>
+				<div class="products--item--description">Lorem ipsum dolor sit amet, mea ullum consectetuer te, at placerat repudiare cum. Cabernet</div>
+				<li class="products--items">Merlot</li>
+				<div class="products--item--description">Lorem ipsum dolor sit amet, mea ullum consectetuer te, at placerat repudiare cum. Merlot</div>
+				<li class="products--items">Shiraz</li>
+				<div class="products--item--description">Lorem ipsum dolor sit amet, mea ullum consectetuer te, at placerat repudiare cum. Shiraz</div>
+				<li class="products--items">Sauvignon</li>
+				<div class="products--item--description">Lorem ipsum dolor sit amet, mea ullum consectetuer te, at placerat repudiare cum. Sauvignon</div>
+				<li class="products--items">Chenin</li>
+				<div class="products--item--description">Lorem ipsum dolor sit amet, mea ullum consectetuer te, at placerat repudiare cum. Shiraz</div>
+			</div>
+
+			<script src="bundle.js"></script>
+		</div>
+	</body>
+</html>
+
+
+<div>
+
+ <div className="main">
+     <div className="catergories--container">
+         <h2 className="catergories--header">Store Cuboard</h2>
+
+         <Categories
+             categories={this.state.categories}
+             currentCategory={this.state.currentCategory}
+             joinCategory={this.joinCategory}
+             />
+     </div>
+
+     <div className="search-box">
+         <input id="search-input" type="text" className="search-box_text" onKeyDown={this.searchProduct} />
+     </div>
+
+     <div className="products--container">
+         <Products
+             products={this.state.products}/>
+     </div>
+ </div>
+</div>
